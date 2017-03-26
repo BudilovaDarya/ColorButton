@@ -23,7 +23,13 @@ public class MainActivity extends AppCompatActivity {
                 Random random = new Random();
                  int colors[] = {Color.GRAY, Color.GREEN, Color.CYAN, Color.RED, Color.YELLOW, Color.MAGENTA, Color.BLACK, Color.WHITE};
                  int pos = random.nextInt(colors.length);
-                colorButton.setBackgroundColor(colors[pos]);
+                 colorButton.setBackgroundColor(colors[pos]);
+                if ( pos == 6) {
+                    colorButton.setTextColor(Color.WHITE);
+                }
+                else {
+                    colorButton.setTextColor(Color.BLACK);
+                }
             }
         });
     }
