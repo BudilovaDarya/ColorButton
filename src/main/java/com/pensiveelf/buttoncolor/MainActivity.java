@@ -1,7 +1,6 @@
 package com.pensiveelf.buttoncolor;
 
 import android.graphics.Color;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
                 Random random = new Random();
                  int colors[] = {Color.GRAY, Color.GREEN, Color.CYAN, Color.RED, Color.YELLOW, Color.MAGENTA, Color.BLACK, Color.WHITE};
                  int pos = random.nextInt(colors.length);
-                 colorButton.setBackgroundColor(colors[pos]);
-                if ( pos == 6) {
+                colorButton.setBackgroundColor(colors[pos]);
+                if ( colors[pos] == Color.BLACK) {
                     colorButton.setTextColor(Color.WHITE);
                 }
                 else {
